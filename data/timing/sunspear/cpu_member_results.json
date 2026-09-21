@@ -1,0 +1,65 @@
+{
+ "rows": [
+  {
+   "name": "26G_4MES_B_206",
+   "natoms": 35,
+   "cpu_member_s": 1.74616857804358,
+   "steps": 109,
+   "converged": true
+  },
+  {
+   "name": "4VS_5BWT_A_402",
+   "natoms": 24,
+   "cpu_member_s": 0.6772927759448066,
+   "steps": 52,
+   "converged": true
+  },
+  {
+   "name": "IM5_4EAR_C_301",
+   "natoms": 38,
+   "cpu_member_s": 1.2909886440029368,
+   "steps": 78,
+   "converged": true
+  },
+  {
+   "name": "1CA_2AA7_A_201",
+   "natoms": 54,
+   "cpu_member_s": 3.9075682789552957,
+   "steps": 174,
+   "converged": true
+  },
+  {
+   "name": "LC3_3WIX_C_501",
+   "natoms": 55,
+   "cpu_member_s": 3.817753246985376,
+   "steps": 164,
+   "converged": true
+  },
+  {
+   "name": "C7O_6JSZ_A_401",
+   "natoms": 57,
+   "cpu_member_s": 2.6564724140334874,
+   "steps": 116,
+   "converged": true
+  },
+  {
+   "name": "1ML_4JMU_A_202",
+   "natoms": 75,
+   "cpu_member_s": 9.419807206024416,
+   "steps": 285,
+   "converged": true
+  },
+  {
+   "name": "746_3OCS_A_999",
+   "natoms": 80,
+   "cpu_member_s": 3.3334238099632785,
+   "steps": 102,
+   "converged": true
+  }
+ ],
+ "summary": {
+  "cpu_member_median_s": 2.994948111998383,
+  "cpu_member_median_s_per_step": 0.022678956609211286,
+  "median_steps": 112.5
+ }
+}

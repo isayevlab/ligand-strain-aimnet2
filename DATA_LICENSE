@@ -1,0 +1,13 @@
+The contents of the data/ directory (conformer structures, energies, per-ligand tables,
+force-field comparison tables and timing results) are
+released under the Creative Commons Attribution 4.0 International License (CC BY 4.0),
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt the material for any purpose, including commercially, provided
+you give appropriate credit by citing:
+
+  Gokcan, H.; Isayev, O. Efficient and Accurate Ligand Strain Calculations in Solution with the
+  AIMNet2 Neural Network Potential. J. Chem. Inf. Model. 2026.
+
+Ligand poses derive from LigBoundConf (Tong, J.; Zhao, S. J. Chem. Inf. Model. 2021, 61, 1180)
+and ultimately from the Protein Data Bank; please also cite that work.

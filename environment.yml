@@ -1,0 +1,24 @@
+name: lcse
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - rdkit
+  - ase
+  - pytorch>=2.1
+  - matplotlib
+  - scipy
+  - jupyter
+  - pytest
+  # optional, for scripts/gaff.py (solvated force-field comparison)
+  - openmm
+  - openmmforcefields
+  - openff-toolkit
+  - ambertools
+  # optional, for scripts/timing (GFN2-xTB reference timings)
+  - xtb
+  - pip
+  - pip:
+      - -e .

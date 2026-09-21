@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this dataset, model or code, please cite the paper below."
+title: "Ligand conformational strain in solution with AIMNet2-CPCM: dataset, model and code"
+version: 1.0.0
+date-released: 2026-09-21
+license: MIT
+repository-code: https://github.com/isayevlab/ligand-strain-aimnet2
+url: https://isayevlab.github.io/ligand-strain-aimnet2/
+authors:
+  - family-names: Gokcan
+    given-names: Hatice
+    affiliation: Carnegie Mellon University
+  - family-names: Isayev
+    given-names: Olexandr
+    affiliation: Carnegie Mellon University
+    email: olexandr@cmu.edu
+    orcid: https://orcid.org/0000-0001-7581-8497
+preferred-citation:
+  type: article
+  title: "Efficient and Accurate Ligand Strain Calculations in Solution with the AIMNet2 Neural Network Potential"
+  authors:
+    - family-names: Gokcan
+      given-names: Hatice
+    - family-names: Isayev
+      given-names: Olexandr
+  journal: "Journal of Chemical Information and Modeling"
+  year: 2026
+  doi: ""

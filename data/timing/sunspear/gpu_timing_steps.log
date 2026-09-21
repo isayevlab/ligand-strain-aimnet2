@@ -1,0 +1,10 @@
+ligands 64  conformers 2048  atoms/conformer mean 50.9
+step {'batch': 256, 'max_atoms': 56, 's_per_step': 0.10263402269920334, 'conformer_steps_per_s': 2494.299582802839, 'mem_GiB': 1.7794737815856934, 'model': 'ensemble4'}
+step {'batch': 256, 'max_atoms': 56, 's_per_step': 0.02425772090209648, 'conformer_steps_per_s': 10553.34097680525, 'mem_GiB': 1.7697482109069824, 'model': 'member1'}
+step {'batch': 512, 'max_atoms': 59, 's_per_step': 0.2401886854087934, 'conformer_steps_per_s': 2131.6574472631487, 'mem_GiB': 3.809840679168701, 'model': 'ensemble4'}
+step {'batch': 512, 'max_atoms': 59, 's_per_step': 0.05989198070019484, 'conformer_steps_per_s': 8548.723785959784, 'mem_GiB': 3.788560390472412, 'model': 'member1'}
+step {'batch': 1024, 'max_atoms': 67, 's_per_step': 0.6302835909998976, 'conformer_steps_per_s': 1624.6654912521217, 'mem_GiB': 9.43446397781372, 'model': 'ensemble4'}
+step {'batch': 1024, 'max_atoms': 67, 's_per_step': 0.15734152819495648, 'conformer_steps_per_s': 6508.135593618977, 'mem_GiB': 9.37992238998413, 'model': 'member1'}
+step {'batch': 2048, 'max_atoms': 93, 's_per_step': 2.105969389702659, 'conformer_steps_per_s': 972.4737738420578, 'mem_GiB': 33.72318410873413, 'model': 'ensemble4'}
+step {'batch': 2048, 'max_atoms': 93, 's_per_step': 0.5269053714931943, 'conformer_steps_per_s': 3886.8459324986266, 'mem_GiB': 33.5152907371521, 'model': 'member1'}
+rep 0 {'batch': 1024, 'conformers': 2048, 'converged': 0, 'wall_s': 749.5619653110625, 'conf_per_s': 2.7322624343006727, 'conformer_steps': 1024000.0, 'conf_steps_per_s': 1366.1312171503364, 'mem_GiB': 33.5152907371521}

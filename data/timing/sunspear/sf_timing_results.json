@@ -1,0 +1,58 @@
+{
+ "gpu": "NVIDIA L40S",
+ "n_conformers": 1024,
+ "mean_atoms": 50.859375,
+ "model": "b973c_cpcm member 0",
+ "convergence": "normal",
+ "max_steps": 500,
+ "runs": {
+  "lbfgs_256_rep0": {
+   "method": "lbfgs",
+   "batch": 256,
+   "rep": 0,
+   "wall_s": 57.23779046104755,
+   "conformers": 1024,
+   "converged": 1022,
+   "conf_per_s": 17.890278289076694,
+   "median_steps": 161.0,
+   "mean_steps": 169.146484375,
+   "peak_mem_GiB": 11.831335067749023
+  },
+  "lbfgs_256_rep1": {
+   "method": "lbfgs",
+   "batch": 256,
+   "rep": 1,
+   "wall_s": 48.70446904399432,
+   "conformers": 1024,
+   "converged": 1022,
+   "conf_per_s": 21.024764669439875,
+   "median_steps": 161.0,
+   "mean_steps": 169.13671875,
+   "peak_mem_GiB": 11.831335067749023
+  },
+  "lbfgs_512_rep0": {
+   "method": "lbfgs",
+   "batch": 512,
+   "rep": 0,
+   "wall_s": 45.426378311007284,
+   "conformers": 1024,
+   "converged": 1022,
+   "conf_per_s": 22.54196874312285,
+   "median_steps": 158.5,
+   "mean_steps": 169.458984375,
+   "peak_mem_GiB": 18.477271556854248
+  },
+  "lbfgs_512_rep1": {
+   "method": "lbfgs",
+   "batch": 512,
+   "rep": 1,
+   "wall_s": 45.079264536034316,
+   "conformers": 1024,
+   "converged": 1022,
+   "conf_per_s": 22.715543621645843,
+   "median_steps": 158.5,
+   "mean_steps": 169.458984375,
+   "peak_mem_GiB": 18.477271556854248
+  }
+ }
+}

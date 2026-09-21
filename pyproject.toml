@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lcse"
+version = "1.0.0"
+description = "Solvated ligand conformational strain energy with the AIMNet2-CPCM neural network potential: data, model interface and analysis code"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Hatice Gokcan" }, { name = "Olexandr Isayev", email = "olexandr@cmu.edu" }]
+dependencies = ["numpy", "pandas", "rdkit>=2023.09", "torch>=2.1", "ase>=3.22"]
+
+[project.optional-dependencies]
+analysis = ["matplotlib", "scipy", "jupyter"]
+forcefield = ["openmm>=8", "openmmforcefields", "openff-toolkit"]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://isayevlab.github.io/ligand-strain-aimnet2/"
+Repository = "https://github.com/isayevlab/ligand-strain-aimnet2"
+
+[tool.setuptools]
+packages = ["lcse"]

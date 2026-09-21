@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.pytest_cache/
+*.xyz
+data/*.sdf
+data/LCSE_details.json
+docs/_site/
+.venv/
+models/*.jpt
