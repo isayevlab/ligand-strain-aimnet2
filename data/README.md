@@ -13,7 +13,7 @@ All energies from AIMNet2-CPCM (B97-3c/CPCM(water) reference) unless stated. Uni
 | `gaff2_obc2_subset.csv` | 50 | GAFF2 (gaff-2.11, AM1-BCC) strain in vacuum and in OBC2 for the stratified subset (10 ligands per net charge 0, +1, −1, −2, −3), single point and re-optimized; MMFF94 columns repeated for convenience |
 | `gaff2_obc2_subset_summary.csv` | 5 | Table S5 |
 | `conformer_count_stats.csv` | 5 | Omega conformers per ligand by rotor bin (Figure S14) |
-| `timing/` | | per-conformer timings (Table S3): `cpu_timing_container.csv` (2-core container, near-minimum starts); `sunspear/*.json` (EPYC 7H12 + L40S, ETKDG starts; batched SaddleForge L-BFGS, unbatched ASE FIRE, MMFF94, GFN2-xTB) |
+| `timing/` | | per-conformer timings (Table S3): `cpu_timing_container.csv` (2-core container, near-minimum starts); `sunspear/` (EPYC 7H12 + L40S, ETKDG starts): `sf_timing_results.json` batched SaddleForge L-BFGS, `steps_timing_results.json` unbatched ASE FIRE with the 4-member ensemble on GPU and CPU, `cpu_member_results.json` single member on CPU, `cpu_refs_results.json` MMFF94 and GFN2-xTB, `gpu_timing_steps.log` forward-pass batch-size scan (Table S6) |
 
 ## Provenance
 

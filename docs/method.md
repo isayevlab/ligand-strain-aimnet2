@@ -35,8 +35,9 @@ Gas-phase methods, force fields and gas-phase potentials alike, collapse charged
 |---|---|---|
 | AIMNet2-CPCM, batched L-BFGS (SaddleForge), one L40S, batch 512 | 22.7 conformers/s | ~100 GPU-h |
 | AIMNet2-CPCM forward pass, batch 256 | 10 500 conformer-steps/s (~240× one CPU core) | |
-| AIMNet2-CPCM, unbatched, 1 CPU thread (not the intended platform) | 3.0 s | ~6800 CPU-h |
+| AIMNet2-CPCM, unbatched, 1 CPU thread (not the intended platform) | 3.0 s (one member); 11.6 s (ensemble) | ~6800 CPU-h |
+| AIMNet2-CPCM, unbatched, one L40S (launch-bound) | 3.7 s (ensemble) | ~8400 GPU-h |
 | GFN2-xTB/ALPB, 1 CPU thread | 7.7 s | ~17 000 CPU-h |
 | MMFF94, 1 CPU thread | 0.05 s | ~110 CPU-h |
 
-Unbatched GPU execution is launch-bound and no faster than the CPU; batching is what makes the method fast. Details in Table S3 of the paper and `data/timing/`.
+Unbatched GPU execution is launch-bound (a factor of 3 over the CPU, not 240); batching is what makes the method fast. Forward-pass throughput on one L40S versus batch size (conformer-steps per second, single member / four-member ensemble): 10 550 / 2490 at batch 256, 8550 / 2130 at 512, 6510 / 1620 at 1024, 3890 / 970 at 2048; the decline with batch size comes from padding to larger molecules, so the GPU is saturated from batch 256. Details in Tables S3 and S6 of the paper and in `data/timing/sunspear/`.
