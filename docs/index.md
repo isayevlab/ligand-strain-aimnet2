@@ -18,7 +18,7 @@ This site accompanies
 | | |
 |---|---|
 | **Dataset** | solvated LCSE for 7887 PDB ligand instances from LigBoundConf, with the torsion-constrained bound conformer and the solvated global minimum of each, descriptors, PDBe annotations, and MMFF94 / GAFF2 comparison values |
-| **Model** | the AIMNet2-CPCM TorchScript ensemble (4 members, 14 elements, neutral and charged molecules) with an ASE calculator |
+| **Model** | ASE calculator and reference strain protocol for the AIMNet2-CPCM TorchScript ensemble (4 members, 14 elements, neutral and charged molecules); the weights themselves will be released with the published paper |
 | **Code** | reference implementation of the strain protocol, the analysis notebook behind the paper's figures, and the scripts for every Supporting Information table |
 
 ## Three numbers
