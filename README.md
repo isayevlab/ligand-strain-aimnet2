@@ -86,7 +86,7 @@ Structures: `bound_conformers.sdf.gz` and `global_conformers.sdf.gz` (7887 each,
 | Figure S14, conformer statistics | `python scripts/confstats.py` |
 | Figure S15 and Table S4, MMFF94 single-point and re-optimized strain, all ligands | `python scripts/mmff.py && python scripts/mmff_fig.py` (~20 min CPU) |
 | Figure S16 and Table S5, GAFF2 in vacuum and OBC2 on the 50-ligand subset | `python scripts/gaff.py && python scripts/gaff_fig.py` (needs OpenMM stack; ~1 h CPU) |
-| Table S3, timings | `scripts/timing/` (GPU scripts need the model and, for the batched rows, [SaddleForge](https://github.com/isayevlab/saddleforge)) |
+| Tables S3 and S6, timings | `scripts/timing/` (GPU scripts need the model and, for the batched rows, [SaddleForge](https://github.com/isayevlab/saddleforge)); results in `data/timing/sunspear/` |
 
 Scripts read from `data/` and write next to it; set `LCSE_DATA_DIR` to point elsewhere.
 
