@@ -9,7 +9,7 @@ description = "Solvated ligand conformational strain energy with the AIMNet2-CPC
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
-authors = [{ name = "Hatice Gokcan" }, { name = "Olexandr Isayev", email = "olexandr@cmu.edu" }]
+authors = [{ name = "Hatice Gokcan" }, { name = "Olexandr Isayev", email = "olexandr@olexandrisayev.com" }]
 dependencies = ["numpy", "pandas", "rdkit>=2023.09", "torch>=2.1", "ase>=3.22"]
 
 [project.optional-dependencies]
