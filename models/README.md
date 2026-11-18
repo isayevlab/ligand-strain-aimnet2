@@ -4,10 +4,9 @@
 B97-3c/CPCM(water) energies and forces (the same reference geometries as the gas-phase AIMNet2 models).
 Elements: H, B, C, N, O, F, Si, P, S, Cl, As, Se, Br, I; neutral and charged closed-shell molecules.
 
-The weights are not yet public. They will be released with the published paper as a GitHub release of this repository. Until then, requests for the model file go to the corresponding
-author (olexandr@olexandrisayev.com). Everything else in this repository (dataset, analysis, force-field
-comparisons, examples 01 and 03) works without the model; only `examples/02_compute_lcse` and the
-GPU timing scripts need it. Place the file at `models/b973c_cpcm_ens_f.jpt` or set `LCSE_MODEL_DIR`.
+The [CPCM ensemble weights](b973c_cpcm_ens_f.jpt) are included in this repository and accompany the
+[published paper](https://doi.org/10.1021/acs.jcim.6c02468). Example `02_compute_lcse` and the GPU
+timing scripts look for `models/b973c_cpcm_ens_f.jpt`. Set `LCSE_MODEL_DIR` to use another directory.
 
 ## Interface
 
@@ -27,4 +26,4 @@ wraps this as an ASE calculator. The gas-phase counterpart `b973c_gas_ens_f.jpt`
 gas-phase B97-3c reference) is available on request and was used for the FreeSolv solvation-energy
 benchmark in Figure 2a.
 
-Model weights will be released under CC BY 4.0.
+The CPCM ensemble weights are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

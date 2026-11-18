@@ -25,4 +25,4 @@ Scripts read from `data/` (override with `LCSE_DATA_DIR`) and the model from `mo
 
 ## Getting the model
 
-`models/b973c_cpcm_ens_f.jpt` (35 MB) will be released with the published paper as a GitHub release; see `models/README.md`. All results except example 02 and the GPU timing rows can be reproduced without it.
+`models/b973c_cpcm_ens_f.jpt` (35 MB) is included in the repository. See the [model instructions](https://github.com/isayevlab/ligand-strain-aimnet2/tree/main/models) for usage. The model is required for example 02 and the GPU timing rows.

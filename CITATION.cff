@@ -25,4 +25,8 @@ preferred-citation:
       given-names: Olexandr
   journal: "Journal of Chemical Information and Modeling"
   year: 2026
-  doi: ""
+  volume: 66
+  issue: 21
+  start: 14012
+  end: 14024
+  doi: 10.1021/acs.jcim.6c02468
