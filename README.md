@@ -6,7 +6,7 @@
 
 Data, model interface and analysis code for
 
-> H. Gokcan, O. Isayev. *Efficient and Accurate Ligand Strain Calculations in Solution with the AIMNet2 Neural Network Potential.* J. Chem. Inf. Model. **2026**. [DOI to be added]
+> H. Gokcan, O. Isayev. *Efficient and Accurate Ligand Strain Calculations in Solution with the AIMNet2 Neural Network Potential.* J. Chem. Inf. Model. **2026**, 66 (21), 14012â€“14024. [10.1021/acs.jcim.6c02468](https://doi.org/10.1021/acs.jcim.6c02468)
 
 Ligand conformational strain energy (LCSE) is the energy a ligand pays to adopt its protein-bound conformation. The usual estimate references a single gas-phase minimum, which collapses charged ligands into compact, intramolecularly hydrogen-bonded conformers and inflates their strain. AIMNet2-CPCM is a neural network potential trained to B97-3c energies and forces in CPCM water that treats neutral and charged species on the same footing, so the unbound reference can be a solvated global minimum found over thousands of conformers per ligand on a GPU.
 
@@ -53,7 +53,7 @@ print(res["lcse_kcal"])
 | Path | Content |
 |---|---|
 | `data/` | dataset files, described in [data/README.md](data/README.md) |
-| `models/` | AIMNet2-CPCM model interface; weights to be released with the published paper (see models/README.md) |
+| `models/` | [AIMNet2-CPCM TorchScript weights](models/b973c_cpcm_ens_f.jpt) and [usage instructions](models/README.md) |
 | `lcse/` | Python package: loaders, ASE calculator, strain protocol |
 | `examples/` | three runnable scripts: explore the data, compute LCSE, force-field strain |
 | `scripts/` | analysis and figure scripts used for the paper (force-field comparisons, conformer statistics, timings) |
@@ -102,7 +102,10 @@ Reference: B97-3c (B97 GGA, def2-mTZVP, D3(BJ), SRB correction) in CPCM(water, Î
   title   = {Efficient and Accurate Ligand Strain Calculations in Solution with the {AIMNet2} Neural Network Potential},
   journal = {J. Chem. Inf. Model.},
   year    = {2026},
-  doi     = {}
+  volume  = {66},
+  number  = {21},
+  pages   = {14012--14024},
+  doi     = {10.1021/acs.jcim.6c02468}
 }
 ```
 
@@ -110,7 +113,7 @@ Reference structures and crystallographic quality metrics are from Tong and Zhao
 
 ## License
 
-Code: MIT ([LICENSE](LICENSE)). Data: CC BY 4.0 ([DATA_LICENSE](DATA_LICENSE)). Model weights: to be released with the published paper.
+Code: MIT ([LICENSE](LICENSE)). Data: CC BY 4.0 ([DATA_LICENSE](DATA_LICENSE)). Model weights: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Acknowledgments
 

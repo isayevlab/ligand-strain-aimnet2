@@ -9,7 +9,7 @@ title: Home
 
 This site accompanies
 
-> H. Gokcan, O. Isayev. *Efficient and Accurate Ligand Strain Calculations in Solution with the AIMNet2 Neural Network Potential.* J. Chem. Inf. Model. 2026. [DOI to be added]
+> H. Gokcan, O. Isayev. *Efficient and Accurate Ligand Strain Calculations in Solution with the AIMNet2 Neural Network Potential.* J. Chem. Inf. Model. **2026**, 66 (21), 14012–14024. [10.1021/acs.jcim.6c02468](https://doi.org/10.1021/acs.jcim.6c02468)
 
 [Dataset](dataset.html) · [Method](method.html) · [Results](results.html) · [Reproduce](reproduce.html) · [GitHub](https://github.com/isayevlab/ligand-strain-aimnet2)
 
@@ -18,7 +18,7 @@ This site accompanies
 | | |
 |---|---|
 | **Dataset** | solvated LCSE for 7887 PDB ligand instances from LigBoundConf, with the torsion-constrained bound conformer and the solvated global minimum of each, descriptors, PDBe annotations, and MMFF94 / GAFF2 comparison values |
-| **Model** | ASE calculator and reference strain protocol for the AIMNet2-CPCM TorchScript ensemble (4 members, 14 elements, neutral and charged molecules); the weights themselves will be released with the published paper |
+| **Model** | [AIMNet2-CPCM TorchScript weights](https://github.com/isayevlab/ligand-strain-aimnet2/blob/main/models/b973c_cpcm_ens_f.jpt), ASE calculator, and reference strain protocol (4 members, 14 elements, neutral and charged molecules) |
 | **Code** | reference implementation of the strain protocol, the analysis notebook behind the paper's figures, and the scripts for every Supporting Information table |
 
 ## Three numbers
@@ -39,4 +39,4 @@ df = load_master_table()
 df.groupby("net_charge").lcse_kcal.median()
 ```
 
-Code is MIT-licensed; data are CC BY 4.0; model weights will be released with the published paper.
+The code is MIT-licensed. The data and CPCM ensemble weights are licensed under CC BY 4.0.
